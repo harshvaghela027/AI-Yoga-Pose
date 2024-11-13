@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Pose - AI Yoga Trainer</title>
+    <link rel="stylesheet" href="siginup.css">
+</head>
+<body>
+    <div class="container-select">
+        <h2>Select a Yoga Pose</h2>
+        <select id="yogaPose" onchange="changePose()">
+            <option value="savasana">Savasana</option>
+            <option value="vinyasa">Vinyasa</option>
+            <option value="ashtanga">Ashtanga</option>
+            <option value="hatha">Hatha</option>
+            <!-- Add more poses here as needed -->
+        </select>
+        <button onclick="startYoga()">Start Yoga</button>
+    </div>
+
+    <div class="container-pose">
+        <!-- Left side: Pose Demonstration -->
+        <div class="pose-demo">
+            <h2 id="pose-name">Savasana</h2>
+            <img id="pose-image" src="savasana-demo.png" alt="Savasana Demo" class="pose-image">
+            <p id="pose-description">This is the correct way to do Savasana. Relax your body and follow the posture.</p>
+        </div>
+
+        <!-- Right side: Live Camera Feed -->
+        <div class="live-camera">
+            <h2>Your Live Camera</h2>
+            <video id="video" autoplay></video>
+            <div id="feedback" class="feedback">
+                <!-- Feedback message will appear here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="yogapose.js"></script>
+</body>
+</html>

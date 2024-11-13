@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoga Asanas</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      header {
+        background-color: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 15px 20px;
+        margin-bottom: 40px;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+      }
+
+      nav ul li {
+        margin: 0 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1.1rem;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      nav ul li a:hover {
+        color: #f76c6c;
+      }
+
+      .page-title {
+        text-align: center;
+        color: #333;
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+      }
+
+      .asana-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .asana-card {
+        background-color: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .asana-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      }
+      .asana-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .asana-info {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .asana-info h3 {
+        font-size: 1.3rem;
+        color: #333;
+        margin-bottom: 15px;
+      }
+
+      .learn-btn {
+        background-color: #f76c6c;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      .learn-btn:hover {
+        background-color: #e55b5b;
+        transform: scale(1.05);
+      }
+
+      @media (max-width: 768px) {
+        .asana-grid {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1 class="page-title">Explore Yoga Asanas</h1>
+
+    <section class="asana-grid">
+      <div class="asana-card">
+        <img
+          src="https://imgs.search.brave.com/BNgur4bD9Y4mA5fRWjRk5BQHOFsDv2GNnOgnMjvHsFU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTIx/MzEwMjYxNi9waG90/by95b2dhLWluc3Ry/dWN0b3ItZG9pbmct/dnJpa3NoYXNhbmEt/YW5kLXNtaWxpbmcu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PU9SNWNKeHRVVDY2/SzdUUGlXMmhrS0Fs/eU1heGJORlF1bGFE/UjNNMUpoV2s9"
+          alt="Vrksasana Asana"
+        />
+        <div class="asana-info">
+          <h3>Vrksasana</h3>
+          <button class="learn-btn">Learn More</button>
+        </div>
+      </div>
+      <div class="asana-card">
+        <img
+          src="https://imgs.search.brave.com/lyFXalrglbgvs8Ltc2SMcXHHNsEJNCzu3x3c87cQdlE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wdXJu/YXlvZ2E4MjguY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE1/LzAyL0FkaG9NdWto/YVNodmFuYXNhbmEu/anBn"
+          alt="Adho Mukha Asana"
+        />
+        <div class="asana-info">
+          <h3>Adho Mukha</h3>
+          <button class="learn-btn">Learn More</button>
+        </div>
+      </div>
+      <div class="asana-card">
+        <img
+          src="https://imgs.search.brave.com/rvcwruOuUH4tvMoyCRhKt_hu6AMvY4AAto-e04F55D0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Z29kaWdpdC5jb20v/Y29udGVudC9kYW0v/Z29kaWdpdC9kaXJl/Y3Rwb3J0YWwvZW4v/cGVyZm9ybWluZy1i/YWxhc2FuYS5qcGc"
+          alt="Balasana"
+        />
+        <div class="asana-info">
+          <h3>Balasana</h3>
+          <button class="learn-btn">Learn More</button>
+        </div>
+      </div>
+      <div class="asana-card">
+        <img
+          src="https://imgs.search.brave.com/gNWzqAB0skaTTJgXN6iFEq5Xsz8f9O8spepaA57Z8WI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA4LzExLzYyLzI3/LzM2MF9GXzgxMTYy/Mjc5MV9RbXRDZU5w/aVJPalVzQ3l3MzFM/MUhVSUVjRGFTUVda/WS5qcGc"
+          alt="Tadasana"
+        />
+        <div class="asana-info">
+          <h3>Tadasana</h3>
+          <button class="learn-btn">Learn More</button>
+        </div>
+      </div>
+      <div class="asana-card">
+        <img
+          src="https://imgs.search.brave.com/b6BwfP1h5l4IaXGMKUKIhs03GyYN5tZGw8khOQAEK-8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dGhleW9nYWNvbGxl/Y3RpdmUuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE5LzEx/L3R3aXN0aW5nLXRy/aWFuZ2xlLTEyMDB4/ODAwLmpwZw"
+          alt="Trikonasana"
+        />
+        <div class="asana-info">
+          <h3>Trikonasana</h3>
+          <button class="learn-btn">Learn More</button>
+        </div>
+      </div>
+      
+    

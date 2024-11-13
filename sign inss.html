@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In - Yoga App</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .container {
+        display: flex;
+        background-color: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 100%;
+        max-width: 1000px;
+      }
+      .form-container {
+        flex: 1;
+        padding: 50px;
+      }
+
+      .image-container {
+        flex: 1;
+        background: url("https://plus.unsplash.com/premium_photo-1669446008800-9a124b0fd3a2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8eW9nYXxlbnwwfHwwfHx8MA%3D%3D")
+          center/cover no-repeat;
+      }
+
+      h2 {
+        color: #333;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .input-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #666;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+
+      button {
+        background-color: #f76c6c;
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #e55b5b;
+      }
+
+      .links {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .links a {
+        color: #f76c6c;
+        text-decoration: none;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+
+        .image-container {
+          display: none;
+        }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h2>Sign In</h2>
+        <form>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit"><a href="homenewc.html">Sign In</a></button>
+        </form>
+        <div class="links">
+          <a href="#">Forgot password?</a> | <a href="sign upss.html">Sign up</a>
+        </div>
+      </div>
+      <div class="image-container"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zen Yoga</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: #f7f7f7;
+        color: #333;
+      }
+
+      header {
+        background-color: #ffffff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+        padding: 1rem 5%;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #4a4a4a;
+      }
+
+      .logo span {
+        color: #7e57c2;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav-links li {
+        margin-left: 2rem;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #4a4a4a;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover,
+      .nav-links .active {
+        color: #7e57c2;
+      }
+
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 100vh;
+        padding: 0 5%;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      }
+      .hero-content {
+        max-width: 50%;
+      }
+
+      .hero-content h1 {
+        font-size: 3rem;
+        color: #333;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+      }
+
+      .hero-content p {
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+        width: 95%;
+      }
+
+      .cta-btn {
+        display: inline-block;
+        padding: 0.8rem 1.5rem;
+        background-color: #7e57c2;
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-btn:hover {
+        background-color: #6a4caf;
+      }
+
+      .hero-image {
+        max-width: 32%;
+      }
+
+      .hero-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 50px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      @media (max-width: 768px) {
+        .hero {
+          flex-direction: column;
+          text-align: center;
+          padding-top: 80px;
+        }
+
+        .hero-content,
+        .hero-image {
+          max-width: 100%;
+        }
+
+        .hero-content {
+          margin-bottom: 2rem;
+        }
+
+        .nav-links {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Zen<span>Yoga</span></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+          <h1>Discover Inner Peace Through Yoga</h1>
+          <p>
+            Embark on a transformative journey of self-discovery and well-being.
+            Our expert-led classes cater to all levels, helping you achieve
+            balance in mind, body, and spirit.
+          </p>
+          <a href="#" class="cta-btn">Start Your Journey</a>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://img.freepik.com/premium-photo/yoga-lotus-logo-white-background_1215343-2375.jpg?size=626&ext=jpg&ga=GA1.1.966963289.1726404815&semt=ais_hybrid"
+            alt="Yoga Pose"
+          />
+        </div>
+      </section>
+    </body>
+  </html>

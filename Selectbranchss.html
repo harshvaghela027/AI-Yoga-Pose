@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoga Tracks</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 20px;
+      }
+
+      .tracks-section {
+        background-color: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 100%;
+        max-width: 1200px;
+      }
+
+      .heading {
+        background-color: #f76c6c;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .heading h1 {
+        color: #ffffff;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+.content {
+  display: flex;
+  padding: 30px;
+  gap: 30px;
+}
+
+.image-container {
+  width: 50%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tracks {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.track-btn {
+  background-color: #f0f4f8;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .track-btn:before {
+        content: "→";
+        margin-right: 10px;
+        font-size: 1.2rem;
+        color: #f76c6c;
+      }
+
+      .track-btn:hover {
+        background-color: #f76c6c;
+        color: #ffffff;
+        transform: translateY(-5px);
+      }
+
+      .track-btn:hover:before {
+        color: #ffffff;
+      }
+
+      @media (max-width: 768px) {
+        .content {
+          flex-direction: column;
+        }
+
+        .tracks {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="tracks-section">
+      <div class="heading">
+        <h1>Select Your Yoga Journey</h1>
+    </div>
+    <div class="content">
+      <div class="image-container">
+        <img
+          src="https://img.freepik.com/free-vector/world-yoga-day-posture-with-mandala-poster-design_1017-38814.jpg?ga=GA1.1.966963289.1726404815&semt=ais_hybrid"
+          alt="Yoga Pose"
+        />
+      </div>
+      <div class="tracks">
+        <button class="track-btn">Beginners Track</button>
+        <button class="track-btn">Power Yoga Track</button>
+        <button class="track-btn">Immunity Booster Track</button>
+        <button class="track-btn">Cardiovascular Yoga Track</button>
+        <button class="track-btn">Yoga for Migraine Track</button>
+        <button class="track-btn">Yoga for Asthma Track</button>
+      </div>
+    </div>
+  </section>
+ </body>
+</html>

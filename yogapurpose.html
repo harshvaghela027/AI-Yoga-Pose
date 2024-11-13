@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Gender - AI Yoga Trainer</title>
+    <link rel="stylesheet" href="siginup.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Select Your Gender</h2>
+        <form action="yoga-purpose.html" method="post">
+            <label>
+                <input type="radio" name="gender" value="male" required> Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female" required> Female
+            </label>
+            <button type="submit">Next</button>
+        </form>
+    </div>
+    <div class="container">
+        <h2>Why are you doing Yoga?</h2>
+        <form action="user-details.html" method="post">
+            <label>
+                <input type="radio" name="purpose" value="fitness" required> Fitness
+            </label>
+            <label>
+                <input type="radio" name="purpose" value="relaxation" required> Relaxation
+            </label>
+            <label>
+                <input type="radio" name="purpose" value="meditation" required> Meditation
+            </label>
+            <label>
+                <input type="radio" name="purpose" value="flexibility" required> Flexibility
+            </label>
+            <button type="submit">Next</button>
+        </form>
+    </div>
+    <div class="container">
+        <h2>Personalize Your Yoga Experience</h2>
+        <form action="home-page.html" method="post">
+            <label for="weight">Your Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <label for="goal">Your Goal:</label>
+            <input type="text" id="goal" name="goal" placeholder="e.g., Lose weight, Improve flexibility" required>
+
+            <label for="yoga-type">Type of Yoga:</label>
+            <select id="yoga-type" name="yoga-type" required>
+                <option value="hatha">Hatha Yoga</option>
+                <option value="vinyasa">Vinyasa Yoga</option>
+                <option value="ashtanga">Ashtanga Yoga</option>
+                <option value="restorative">Restorative Yoga</option>
+            </select>
+
+            <button type="submit">Next</button>
+        </form>
+    </div>
+
+</body>
+</html>
